@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"
+    />
+    <title>Ejemplo Manejo de Cache</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/londinium-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="manifest" href="manifest.json">
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse" role="navigation"></div>
+    <!-- /navbar -->
+    <!-- /navbar -->
+
+    <!-- Page container -->
+    <div class="page-container">
+      <!-- Page content -->
+      <div class="page-content">
+        <!-- Page header -->
+        <div class="page-header">
+          <div class="page-title">
+            <h3>
+              Formulario de Registro
+              <small>Ingresa los datos del nuevo producto</small>
+            </h3>
+          </div>
+        </div>
+        <!-- /page header -->
+
+        <!-- Form validation -->
+        <form class="form-horizontal validate" action="#" role="form">
+          <div class="block">
+            <div class="alert alert-success fade in block-inner">
+              <button type="button" class="close" data-dismiss="alert">
+                ×
+              </button>
+              Todos los campos son obligatorios.
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label"
+                >Nombre: <span class="mandatory">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="required form-control"
+                  name="nombre"
+                  id="nombre"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label"
+                >Costo: <span class="mandatory">*</span></label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="required form-control" name="costo" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label"
+                >Descripción: <span class="mandatory">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="required form-control"
+                  name="descripcion"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label"
+                >Fecha de Registro: <span class="mandatory">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="required form-control"
+                  name="date_field"
+                />
+              </div>
+            </div>
+
+            <div class="form-actions text-right">
+              <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+        <!-- /form validation -->
+
+        <script src="js/app.js"></script>
+  </body>
+</html>
